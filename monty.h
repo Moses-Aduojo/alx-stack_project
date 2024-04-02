@@ -21,9 +21,11 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
+
 void execute_instruction(stack_t **stack, int line_num);
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
 void parse_and_execute_instructions(FILE *fp, stack_t **stack, int *line_num);
 void parse_and_execute(char *instruction_line, stack_t **stack, int *line_num);
 void free_stack(stack_t *stack);

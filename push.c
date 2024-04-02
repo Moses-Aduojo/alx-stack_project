@@ -13,8 +13,7 @@ void push(stack_t **stack, unsigned int line_number)
 
 	if (strcmp(tokens[1], "\0") == 0)
 	{
-		printf("%s\n%s\n", tokens[0], tokens[1]);
-		fprintf(stderr, "L%d: usage: push integer\n\n", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 

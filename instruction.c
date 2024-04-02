@@ -11,6 +11,7 @@ void execute_instruction(stack_t **stack, int line_num)
 	instruction_t instructions[] = {
 		{"push", &push},
 		{"pall", &pall},
+		{"pint", &pint},
 		{NULL, NULL}
 	};
 	int num_instructions = sizeof(instructions) / sizeof(instructions[0]);
