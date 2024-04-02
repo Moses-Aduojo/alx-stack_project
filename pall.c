@@ -15,10 +15,7 @@ void pall(stack_t **stack, unsigned int line_number)
 		;
 	}
 	if (*stack == NULL)
-	{
-		printf("Stack is empty\n");
 		return;
-	}
 
 	while (current != NULL)
 	{
